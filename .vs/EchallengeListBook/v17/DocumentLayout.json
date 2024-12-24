@@ -1,0 +1,186 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5A4C85-CB87-4A7B-9175-271151B3A909}|BookManagement.Tests\\BookManagement.Tests.csproj|d:\\ehei 5eme\\qualit\u00E9 logiciel\\echallengelistbook\\bookmanagement.tests\\unittests\\bookcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5A4C85-CB87-4A7B-9175-271151B3A909}|BookManagement.Tests\\BookManagement.Tests.csproj|solutionrelative:bookmanagement.tests\\unittests\\bookcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{869C4C3B-B9C3-443A-986F-632289E6A45A}|EchallengeListBook\\EchallengeListBook.csproj|d:\\ehei 5eme\\qualit\u00E9 logiciel\\echallengelistbook\\echallengelistbook\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{869C4C3B-B9C3-443A-986F-632289E6A45A}|EchallengeListBook\\EchallengeListBook.csproj|solutionrelative:echallengelistbook\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5A4C85-CB87-4A7B-9175-271151B3A909}|BookManagement.Tests\\BookManagement.Tests.csproj|d:\\ehei 5eme\\qualit\u00E9 logiciel\\echallengelistbook\\bookmanagement.tests\\unittests\\bookservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5A4C85-CB87-4A7B-9175-271151B3A909}|BookManagement.Tests\\BookManagement.Tests.csproj|solutionrelative:bookmanagement.tests\\unittests\\bookservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{869C4C3B-B9C3-443A-986F-632289E6A45A}|EchallengeListBook\\EchallengeListBook.csproj|d:\\ehei 5eme\\qualit\u00E9 logiciel\\echallengelistbook\\echallengelistbook\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{869C4C3B-B9C3-443A-986F-632289E6A45A}|EchallengeListBook\\EchallengeListBook.csproj|solutionrelative:echallengelistbook\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{869C4C3B-B9C3-443A-986F-632289E6A45A}|EchallengeListBook\\EchallengeListBook.csproj|d:\\ehei 5eme\\qualit\u00E9 logiciel\\echallengelistbook\\echallengelistbook\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{869C4C3B-B9C3-443A-986F-632289E6A45A}|EchallengeListBook\\EchallengeListBook.csproj|solutionrelative:echallengelistbook\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{869C4C3B-B9C3-443A-986F-632289E6A45A}|EchallengeListBook\\EchallengeListBook.csproj|d:\\ehei 5eme\\qualit\u00E9 logiciel\\echallengelistbook\\echallengelistbook\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{869C4C3B-B9C3-443A-986F-632289E6A45A}|EchallengeListBook\\EchallengeListBook.csproj|solutionrelative:echallengelistbook\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{869C4C3B-B9C3-443A-986F-632289E6A45A}|EchallengeListBook\\EchallengeListBook.csproj|d:\\ehei 5eme\\qualit\u00E9 logiciel\\echallengelistbook\\echallengelistbook\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{869C4C3B-B9C3-443A-986F-632289E6A45A}|EchallengeListBook\\EchallengeListBook.csproj|solutionrelative:echallengelistbook\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{869C4C3B-B9C3-443A-986F-632289E6A45A}|EchallengeListBook\\EchallengeListBook.csproj|d:\\ehei 5eme\\qualit\u00E9 logiciel\\echallengelistbook\\echallengelistbook\\dal\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{869C4C3B-B9C3-443A-986F-632289E6A45A}|EchallengeListBook\\EchallengeListBook.csproj|solutionrelative:echallengelistbook\\dal\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{869C4C3B-B9C3-443A-986F-632289E6A45A}|EchallengeListBook\\EchallengeListBook.csproj|d:\\ehei 5eme\\qualit\u00E9 logiciel\\echallengelistbook\\echallengelistbook\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{869C4C3B-B9C3-443A-986F-632289E6A45A}|EchallengeListBook\\EchallengeListBook.csproj|solutionrelative:echallengelistbook\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{869C4C3B-B9C3-443A-986F-632289E6A45A}|EchallengeListBook\\EchallengeListBook.csproj|d:\\ehei 5eme\\qualit\u00E9 logiciel\\echallengelistbook\\echallengelistbook\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{869C4C3B-B9C3-443A-986F-632289E6A45A}|EchallengeListBook\\EchallengeListBook.csproj|solutionrelative:echallengelistbook\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 163,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\EchallengeListBook\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "EchallengeListBook\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\EchallengeListBook\\Properties\\launchSettings.json",
+              "RelativeToolTip": "EchallengeListBook\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-23T21:30:56.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookServiceTests.cs",
+              "DocumentMoniker": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\BookManagement.Tests\\UnitTests\\BookServiceTests.cs",
+              "RelativeDocumentMoniker": "BookManagement.Tests\\UnitTests\\BookServiceTests.cs",
+              "ToolTip": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\BookManagement.Tests\\UnitTests\\BookServiceTests.cs",
+              "RelativeToolTip": "BookManagement.Tests\\UnitTests\\BookServiceTests.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAIA7wDwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T11:25:56.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\EchallengeListBook\\Program.cs",
+              "RelativeDocumentMoniker": "EchallengeListBook\\Program.cs",
+              "ToolTip": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\EchallengeListBook\\Program.cs",
+              "RelativeToolTip": "EchallengeListBook\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T09:46:37.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\EchallengeListBook\\Services\\BookService.cs",
+              "RelativeDocumentMoniker": "EchallengeListBook\\Services\\BookService.cs",
+              "ToolTip": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\EchallengeListBook\\Services\\BookService.cs",
+              "RelativeToolTip": "EchallengeListBook\\Services\\BookService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAywBoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T09:58:12.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\EchallengeListBook\\Services\\IBookService.cs",
+              "RelativeDocumentMoniker": "EchallengeListBook\\Services\\IBookService.cs",
+              "ToolTip": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\EchallengeListBook\\Services\\IBookService.cs",
+              "RelativeToolTip": "EchallengeListBook\\Services\\IBookService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T09:57:25.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\EchallengeListBook\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "EchallengeListBook\\Models\\Book.cs",
+              "ToolTip": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\EchallengeListBook\\Models\\Book.cs",
+              "RelativeToolTip": "EchallengeListBook\\Models\\Book.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T09:48:26.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Data.cs",
+              "DocumentMoniker": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\EchallengeListBook\\DAL\\Data.cs",
+              "RelativeDocumentMoniker": "EchallengeListBook\\DAL\\Data.cs",
+              "ToolTip": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\EchallengeListBook\\DAL\\Data.cs",
+              "RelativeToolTip": "EchallengeListBook\\DAL\\Data.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T10:53:32.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\EchallengeListBook\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "EchallengeListBook\\Controllers\\BookController.cs",
+              "ToolTip": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\EchallengeListBook\\Controllers\\BookController.cs",
+              "RelativeToolTip": "EchallengeListBook\\Controllers\\BookController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAQwEAAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T09:43:47.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookControllerTests.cs",
+              "DocumentMoniker": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\BookManagement.Tests\\UnitTests\\BookControllerTests.cs",
+              "RelativeDocumentMoniker": "BookManagement.Tests\\UnitTests\\BookControllerTests.cs",
+              "ToolTip": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\BookManagement.Tests\\UnitTests\\BookControllerTests.cs",
+              "RelativeToolTip": "BookManagement.Tests\\UnitTests\\BookControllerTests.cs",
+              "ViewState": "AgIAALsAAAAAAAAAAADwv8cAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T11:26:15.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\EchallengeListBook\\appsettings.json",
+              "RelativeDocumentMoniker": "EchallengeListBook\\appsettings.json",
+              "ToolTip": "D:\\Ehei 5eme\\Qualit\u00E9 logiciel\\EchallengeListBook\\EchallengeListBook\\appsettings.json",
+              "RelativeToolTip": "EchallengeListBook\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-22T13:29:32.477Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

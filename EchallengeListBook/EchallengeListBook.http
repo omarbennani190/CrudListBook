@@ -1,0 +1,6 @@
+@EchallengeListBook_HostAddress = http://localhost:5282
+
+GET {{EchallengeListBook_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
