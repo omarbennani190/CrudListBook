@@ -19,8 +19,8 @@ RUN dotnet restore "BookManagement.Tests/BookManagement.Tests.csproj"
 
 # Construire le projet
 RUN dotnet build "EchallengeListBook/EchallengeListBook.csproj" -c Release -o /app/build
-RUN dotnet build "BookManagement.Tests/BookManagement.Tests.csproj" -c Release /app/test
-RUN dotnet test "BookManagement.Tests/BookManagement.Tests.csproj" --logger:trx /app/test
+RUN dotnet build "BookManagement.Tests/BookManagement.Tests.csproj" -c Release
+RUN dotnet test "BookManagement.Tests/BookManagement.Tests.csproj" --logger:trx
 
 # Publier le projet
 RUN dotnet publish "EchallengeListBook/EchallengeListBook.csproj" -c Release -o /app/publish
