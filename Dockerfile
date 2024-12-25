@@ -10,6 +10,10 @@ RUN apt-get update && apt-get install -y \
     libssl3 \
     && rm -rf /var/lib/apt/lists/*
 
+# Ajouter les dépendances de test nécessaires
+RUN dotnet add BookManagement.Tests/BookManagement.Tests.csproj package xunit
+RUN dotnet add BookManagement.Tests/BookManagement.Tests.csproj package xunit.runner.visualstudio
+
 # Copier les fichiers restants
 COPY . .
 
@@ -20,6 +24,8 @@ RUN dotnet restore "BookManagement.Tests/BookManagement.Tests.csproj"
 # Construire le projet
 RUN dotnet build "EchallengeListBook/EchallengeListBook.csproj" -c Release -o /app/build
 RUN dotnet build "BookManagement.Tests/BookManagement.Tests.csproj" -c Release
+
+# Exécuter les tests
 RUN dotnet test "BookManagement.Tests/BookManagement.Tests.csproj" --logger:trx
 
 # Publier le projet
