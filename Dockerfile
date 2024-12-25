@@ -10,16 +10,12 @@ RUN apt-get update && apt-get install -y \
     libssl3 \
     && rm -rf /var/lib/apt/lists/*
 
-# Copier les projets et les dépendances
-COPY ["EchallengeListBook/EchallengeListBook.csproj", "EchallengeListBook/"]
-COPY ["BookManagement.Tests/BookManagement.Tests.csproj", "BookManagement.Tests/"]
+# Copier les fichiers restants
+COPY . .
 
 # Restaurer les dépendances
 RUN dotnet restore "EchallengeListBook/EchallengeListBook.csproj"
 RUN dotnet restore "BookManagement.Tests/BookManagement.Tests.csproj"
-
-# Copier les fichiers restants
-COPY . .
 
 # Construire le projet
 WORKDIR /app/EchallengeListBook
