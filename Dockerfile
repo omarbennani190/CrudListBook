@@ -26,7 +26,7 @@ RUN dotnet build "EchallengeListBook/EchallengeListBook.csproj" -c Release -o /a
 RUN dotnet build "BookManagement.Tests/BookManagement.Tests.csproj" -c Release
 
 # Exécuter les tests
-RUN dotnet test "BookManagement.Tests/BookManagement.Tests.csproj" --logger:trx
+RUN dotnet test "BookManagement.Tests/BookManagement.Tests.csproj" --logger "trx;LogFileName=test-results.trx"
 
 # Publier le projet
 RUN dotnet publish "EchallengeListBook/EchallengeListBook.csproj" -c Release -o /app/publish
