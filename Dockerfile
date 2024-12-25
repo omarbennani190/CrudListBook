@@ -9,25 +9,29 @@ RUN apt-get update && apt-get install -y \
     libssl3 \
     && rm -rf /var/lib/apt/lists/*
 
-# Installer xUnit runner comme dépendance NuGet
-RUN dotnet add "BookManagement.Tests/BookManagement.Tests.csproj" package xunit.runner.console
-
-# Ajouter le chemin des outils au PATH
-ENV PATH="$PATH:/root/.dotnet/tools"
-
-# Copier et restaurer le projet
+# Copier les projets et les dépendances
 COPY ["EchallengeListBook/EchallengeListBook.csproj", "EchallengeListBook/"]
+COPY ["BookManagement.Tests/BookManagement.Tests.csproj", "BookManagement.Tests/"]
+
+# Restaurer les dépendances
 RUN dotnet restore "EchallengeListBook/EchallengeListBook.csproj"
+RUN dotnet restore "BookManagement.Tests/BookManagement.Tests.csproj"
+
+# Installer xUnit runner comme dépendance NuGet
+WORKDIR /app/BookManagement.Tests
+RUN dotnet add "BookManagement.Tests/BookManagement.Tests.csproj" package xunit.runner.console
 
 # Copier les fichiers restants
 COPY . .
 
 # Construire le projet
 WORKDIR /app/EchallengeListBook
-RUN dotnet build "EchallengeListBook.csproj" -c Release -o /app/build
+RUN dotnet build "EchallengeListBook/EchallengeListBook.csproj" -c Release -o /app/build
+RUN dotnet build "BookManagement.Tests/BookManagement.Tests.csproj" -c Release
+RUN dotnet test "BookManagement.Tests.csproj" --logger:trx
 
 # Publier le projet
-RUN dotnet publish "EchallengeListBook.csproj" -c Release -o /app/publish
+RUN dotnet publish "EchallengeListBook/EchallengeListBook.csproj" -c Release -o /app/publish
 
 # Étape finale
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
