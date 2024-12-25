@@ -19,11 +19,12 @@ RUN dotnet restore "BookManagement.Tests/BookManagement.Tests.csproj"
 
 # Construire le projet
 RUN dotnet build "EchallengeListBook/EchallengeListBook.csproj" -c Release -o /app/build
-RUN dotnet build "BookManagement.Tests/BookManagement.Tests.csproj" -c Release
-RUN dotnet test "BookManagement.Tests/BookManagement.Tests.csproj" --logger:trx
+RUN dotnet build "BookManagement.Tests/BookManagement.Tests.csproj" -c Release /app/test
+RUN dotnet test "BookManagement.Tests/BookManagement.Tests.csproj" --logger:trx /app/test
 
 # Publier le projet
 RUN dotnet publish "EchallengeListBook/EchallengeListBook.csproj" -c Release -o /app/publish
+RUN dotnet publish "BookManagement.Tests/BookManagement.Tests.csproj" -c Release -o /app/publish
 
 # Étape finale
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
