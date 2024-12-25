@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Installer xUnit runner comme dépendance NuGet
-RUN dotnet add "BookManagement/BookManagement.csproj" package xunit.runner.console
+RUN dotnet add "EchallengeListBook/EchallengeListBook.csproj" package xunit.runner.console
 
 # Ajouter le chemin des outils au PATH
 ENV PATH="$PATH:/root/.dotnet/tools"
