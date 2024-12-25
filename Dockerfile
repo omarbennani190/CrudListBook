@@ -18,7 +18,6 @@ RUN dotnet restore "EchallengeListBook/EchallengeListBook.csproj"
 RUN dotnet restore "BookManagement.Tests/BookManagement.Tests.csproj"
 
 # Construire le projet
-WORKDIR /app/EchallengeListBook
 RUN dotnet build "EchallengeListBook/EchallengeListBook.csproj" -c Release -o /app/build
 RUN dotnet build "BookManagement.Tests/BookManagement.Tests.csproj" -c Release
 RUN dotnet test "BookManagement.Tests.csproj" --logger:trx
