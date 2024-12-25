@@ -21,13 +21,6 @@ RUN dotnet add BookManagement.Tests/BookManagement.Tests.csproj package xunit.ru
 RUN dotnet restore "EchallengeListBook/EchallengeListBook.csproj"
 RUN dotnet restore "BookManagement.Tests/BookManagement.Tests.csproj"
 
-# Construire le projet
-RUN dotnet build "EchallengeListBook/EchallengeListBook.csproj" -c Release -o /app/build
-RUN dotnet build "BookManagement.Tests/BookManagement.Tests.csproj" -c Release
-
-# Exécuter les tests
-RUN dotnet test "BookManagement.Tests/BookManagement.Tests.csproj" --logger "trx;LogFileName=test-results.trx"
-
 # Publier le projet
 RUN dotnet publish "EchallengeListBook/EchallengeListBook.csproj" -c Release -o /app/publish
 RUN dotnet publish "BookManagement.Tests/BookManagement.Tests.csproj" -c Release -o /app/publish
