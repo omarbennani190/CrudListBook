@@ -10,12 +10,12 @@ RUN apt-get update && apt-get install -y \
     libssl3 \
     && rm -rf /var/lib/apt/lists/*
 
+# Copier les fichiers restants
+COPY . .
+
 # Ajouter les dépendances de test nécessaires
 RUN dotnet add BookManagement.Tests/BookManagement.Tests.csproj package xunit
 RUN dotnet add BookManagement.Tests/BookManagement.Tests.csproj package xunit.runner.visualstudio
-
-# Copier les fichiers restants
-COPY . .
 
 # Restaurer les dépendances
 RUN dotnet restore "EchallengeListBook/EchallengeListBook.csproj"
