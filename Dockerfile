@@ -1,6 +1,7 @@
 # Utilisation de l'image officielle .NET SDK 8 pour la phase de build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
+EXPOSE 8091
 
 # Mettre à jour et installer les dépendances système
 RUN apt-get update && apt-get install -y \
@@ -16,10 +17,6 @@ COPY ["BookManagement.Tests/BookManagement.Tests.csproj", "BookManagement.Tests/
 # Restaurer les dépendances
 RUN dotnet restore "EchallengeListBook/EchallengeListBook.csproj"
 RUN dotnet restore "BookManagement.Tests/BookManagement.Tests.csproj"
-
-# Installer xUnit runner comme dépendance NuGet
-WORKDIR /app/BookManagement.Tests
-RUN dotnet add "BookManagement.Tests/BookManagement.Tests.csproj" package xunit.runner.console
 
 # Copier les fichiers restants
 COPY . .
