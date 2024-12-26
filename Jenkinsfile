@@ -1,12 +1,8 @@
 pipeline {
-    agent any  // agent Jenkins
+    agent any
 
     environment {
-		registry = "omarbennani190/crudlistbook"
-		img = "$registry:${env.BUILD_ID}"
-		//registerCredential = "docker-hub-login"
-        DOCKER_IMAGE = "dotnetapi"  // Nom de l'image Docker à créer
-        DOCKER_REGISTRY = "omar6866" // Le nom d'utilisateur Docker Hub
+        DOCKER_IMAGE = "omar6866/dotnetapi"  // Le nom d'utilisateur Docker Hub et Nom de l'image Docker à créer
     }
 
     stages {
@@ -17,59 +13,42 @@ pipeline {
             }
         }
 		
-        
-
-
-        stage('Build Docker Image') {
+        stage('Construction projet') {
             steps {
                 script {
-                    // Construire l'image
-                    bat 'docker build -t %DOCKER_REGISTRY%/%DOCKER_IMAGE% .'
+                    bat 'dotnet build EchallengeListBook/EchallengeListBook.csproj'
                 }
-            }
-        }
-		
-		stage('Lancer l\'image Docker') {
-            steps {
-				echo "Run image"
-                bat returnStdout: true, script: "docker run --rm -d --name %DOCKER_IMAGE% -p 8090:8090 %DOCKER_REGISTRY%/%DOCKER_IMAGE%"
             }
         }
 
         stage('Exécuter les tests') {
             steps {
                 script {
-                    bat 'dotnet test BookManagement.Tests/BookManagement.Tests.csproj --logger:xunit'
-					
-                    // exécuter un test de l'application dans le conteneur Docker
-                    bat 'docker run --rm %DOCKER_IMAGE% dotnet test'
+                    //Executer et archiver les résultats des tests
+                    bat 'dotnet test BookManagement.Tests/BookManagement.Tests.csproj --logger "trx;LogFileName=test-results.trx"'
                 }
             }
         }
 
-        stage('Push l\'image dans Docker Hub') {
-            when {
-                branch 'main'  // Ne poussez l'image Docker que sur la branche principale
-            }
+        stage('Construire Docker Image') {
             steps {
                 script {
-					
-
-                    // Se connecter à Docker Hub et pousser l'image
-                    withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
-                        bat 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
-                        // Push l'image vers Docker Hub
-                        bat 'docker push %DOCKER_REGISTRY%/%DOCKER_IMAGE%'
-					}
-				}
+                    bat 'docker build -t %DOCKER_IMAGE% .'
+                }
             }
-			post {
-                always {
-                    // Archiver les résultats des tests
-                    xunit(
-                        tools: [XUnitPublisher('xunit')],
-                        testTimeMargin: '3000'
-                    )
+        }
+		
+        
+        stage('Push Docker Image') {
+            steps {
+                script {
+                    withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                        bat """
+                            echo %DOCKER_PASSWORD% | docker login -u %DOCKER_USERNAME% --password-stdin https://index.docker.io/
+                            docker tag %DOCKER_IMAGE% %DOCKER_IMAGE%:latest
+                            docker push %DOCKER_IMAGE%:latest
+                        """
+                    }
                 }
             }
         }
@@ -77,7 +56,6 @@ pipeline {
 
     post {
         always {
-            // Cette étape est exécutée après chaque pipeline, pour nettoyer les ressources si nécessaire
             echo 'Pipeline terminé.'
         }
 
